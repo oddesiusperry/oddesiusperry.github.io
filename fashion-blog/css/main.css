@@ -1,0 +1,60 @@
+.container {
+  width: 720px;
+  padding: 54px;
+}
+
+h1 {
+  font-family: Lato;
+  font-weight: 300;
+  font-size: 50px;
+  color: #DD0000;
+  margin: 10px 0px 10px 0px;
+
+}
+
+h2 {
+  font-family: Lato;
+  font-weight: 300;
+  font-size: 25px;
+  color: black;
+  margin: 0px 0px 15px 0px;
+}
+
+nav a {
+  font-family: Lato;
+  color: #cccccc;
+  font-size: 22px;
+  font-weight: 300px;
+  margin: 0px 10px 50px 0px;
+}
+
+.dates {
+  font-family: Lato;
+  color: #cccccc;
+  font-size: 40px;
+  font-weight: 300px;
+  margin: 70px 0px 50px 0px;
+}
+
+img {
+  width: 720px;
+}
+
+p {
+  font-family: Lato;
+  font-size: 20px;
+  color: #444444;
+  line-height: 1.5;
+
+}
+
+span {
+  color: #DD0000;
+}
+
+a {
+  font-family: Lato;
+  color: #cccccc;
+  text-decoration: none;
+  font-size: 20px;
+}
