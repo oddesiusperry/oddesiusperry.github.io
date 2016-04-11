@@ -3,21 +3,58 @@
 }
 
 header {
-  background-color: #BDBDBD;
+  /*background-color: #BDBDBD;*/
   height: 42px;
-  margin: 0px;
-  padding: 10px 50px;
+  margin: 0px auto;
+  padding: 10px 0px;
   overflow: auto;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  width: 100%;
+  position: fixed;
 }
 
 .logo a {
   float: left;
   color: blue;
   text-decoration: none;
+  font-weight: 300;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #757575;
+  margin: 10px 0px 0px 40px;
+  letter-spacing: 1px;
 }
 
-.menuItems a {
+nav {
+  margin: 0px 40px 0px 0px;
+}
+
+a span {
+  font-weight: 700;
+  color: #9E9E9E;
+}
+
+.menuItems {
   float:right;
   text-decoration: none;
-  margin: 0px 0px 0px 20px;
+  margin: 17px 0px 0px 40px;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #757575;
+}
+
+.openerImage { 
+  background-color: #F5F5F5;
+  background-size: cover;
+  /*background-image: url() ;
+  background-position: center center;
+  background-repeat: no-repeat;*/
+  /*background-size: cover;*/
+  height: 800px;
+  margin: 0px;
+  padding: 40px 40px;
+  overflow: auto;
 }
