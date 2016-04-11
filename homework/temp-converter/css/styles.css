@@ -30,6 +30,7 @@ body {
   font-size: 20px;
   font-weight: 300;
   margin: 30px;
+  color: #B71C1C;
 }
 
 #fahrenheit {
@@ -49,19 +50,25 @@ body {
   font-weight: 400;
   font-size: 50px;
   margin: 5px;
+  color:#616161;
 }
 
 .tempText {
   font-size: 30px; 
   font-weight: 300;
+  color: #757575;
 }
 
 input {
   border: 0;
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid #B71C1C;
   outline: 0;
   height: 30px;
   width: 100px;
   background-color: transparent;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  color: #424242;
 }
 
