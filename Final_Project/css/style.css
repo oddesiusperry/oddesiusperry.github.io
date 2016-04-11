@@ -1,0 +1,23 @@
+#homepage {
+  font-family: 'Lato', sans-serif;
+}
+
+header {
+  background-color: #BDBDBD;
+  height: 42px;
+  margin: 0px;
+  padding: 10px 50px;
+  overflow: auto;
+}
+
+.logo a {
+  float: left;
+  color: blue;
+  text-decoration: none;
+}
+
+.menuItems a {
+  float:right;
+  text-decoration: none;
+  margin: 0px 0px 0px 20px;
+}
