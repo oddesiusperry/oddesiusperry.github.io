@@ -129,14 +129,17 @@ li a:hover {
   margin-top: -9px
 }
 
-figure {
-  overflow: hidden;
-  height: 100px;
+figure a {
+  border: none;
 }
 
-img {
-  background-color: gray;
+.workImg {
+  background-color: #EE836F;
   width: 25%;
   height: 33.34%;
   float: left;
+}
+
+ .workImg:hover {
+  background-color: rgba(250,250,250, 0.2);
 }

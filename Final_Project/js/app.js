@@ -5,7 +5,7 @@ $(function(){
     var wScroll = $(this).scrollTop();
 
     $('.nameTitle').css({
-      'transform' : 'translate(0px, '+ wScroll /4.25 + '% )'
+      'transform' : 'translate(0px, '+ wScroll /4 + '% )'
 
 
     });
