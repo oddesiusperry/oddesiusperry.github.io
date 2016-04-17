@@ -1,66 +1,17 @@
-// $(document).ready(function() {
-//   $('#box-one').css('background-color', 'red').text('box one');
-//   $('#box-two').css('background-color', 'blue').text('box two');
+$(function(){
+  
+  $(window).scroll(function() {
 
-//   $('#box-one').click(function() {
-//     $('#box-one').css('height', '500px').css('width', '500px')
-//   });
+    var wScroll = $(this).scrollTop();
 
-//   $('#box-two').click(function() {
-//     $('#box-two').css('height', '500px').css('width', '500px')
-//   });
-
-// });
+    $('.nameTitle').css({
+      'transform' : 'translate(0px, '+ wScroll /4.25 + '% )'
 
 
+    });
 
-$(document).ready(function() {
-  $('#box-one').css({'background-color': 'red',
-    'color': 'white',
-    'padding': '50px',
-    'text-align': 'center'})
-    .text('box one red');
-
-
-
-
-  $('#box-two').css({'background-color': 'blue',
-    'color': 'white',
-    'padding': '50px',
-    'text-align': 'center'})
-    .text('box one blue');
-
-  $('#box-one').click(function() {
-    $(this).css('height', '500px').css('width', '500px')
   });
 
-  $('#box-two').click(function() {
-    $(this).css('height', '500px').css('width', '500px')
-  });
+
 
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
