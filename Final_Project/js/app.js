@@ -6,12 +6,10 @@ $(function(){
 
     $('.nameTitle').css({
       'transform' : 'translate(0px, '+ wScroll /4 + '% )'
-
-
     });
-
   });
 
-
+  $('#videoPlayer').hide().slide();
+  var $vid = $()
 
 });

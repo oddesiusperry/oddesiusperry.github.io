@@ -143,3 +143,39 @@ figure a {
  .workImg:hover {
   background-color: rgba(250,250,250, 0.2);
 }
+
+.videoContainer {
+  height: 100%;
+  width: 100%;
+  padding: 0px 0px 20px 0px;
+  background-color: #BDBDBD;
+  /*background-attachment: fixed;*/
+  overflow: hidden;
+}
+
+.vidSubhed {
+  /*margin-top: 25px;*/
+  margin: 25px auto;
+  font-size: 0.9em; 
+  font-weight: 400;
+  color: #F5F5F5;
+  width: 941px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border-bottom: 1px solid #FAFAFA;
+  position: relative;
+}
+
+.vidWrapper {
+  /*width: 100%;*/
+}
+
+.vidPlayer {
+  background-color: #FFEBEE;
+  width: 941px;
+  height: 529px;
+  max-width: 100%;
+  margin: 0px auto;
+  position: relative;
+}
