@@ -7,9 +7,31 @@ $(function(){
     $('.nameTitle').css({
       'transform' : 'translate(0px, '+ wScroll /4 + '% )'
     });
+    
   });
 
-  $('#videoPlayer').hide().slide();
-  var $vid = $()
+      $('.workImg').click(function () {
+      $('.videoContainer').slideToggle();
+
+    });
 
 });
+
+
+
+//Scroll Window Test
+
+// $(function() {
+  
+//   $(window).scroll(function() {
+
+//   var windowScrollPosTop = $(window).scrollTop();
+
+//   $(".status").html(windowScrollPosTop);
+
+//   });
+
+// });
+
+
+
