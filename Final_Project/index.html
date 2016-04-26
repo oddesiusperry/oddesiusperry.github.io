@@ -9,17 +9,23 @@
       <!--              RESPONSIVE WEB META TAG              -->
       <meta name="viewport" content="width=device-width, initial-scale=1">
 
-      <!--              GOOGLE FONTS              -->
-      <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+      <!--              GOOGLE FONTS AND ICONS              -->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+      <link href='https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,100italic,100,700italic,700,900,900italic' rel='stylesheet' type='text/css'>
 
       <link rel="icon" href="" type="image/x-icon" sizes="16x16">
 
       <!--             CSS STYLES             -->
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
       <link rel="stylesheet" href="css/reset.css">
 
       <link rel="stylesheet" href="css/style.css">
       
-      <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> -->
+ 
 
       <!-- <link rel="stylesheet " media="screen and (min-width: 1024px)" href="css/1024only.css"> -->
 
@@ -31,110 +37,154 @@
 </head>
 <!--      END OF HEAD SECTION       -->
 
+
+
+
 <body>
 <!-- SCROLL TOP COUNTER -->
-<div class="status"></div>
+<!-- <div class="status"></div> -->
 
-  <header class="clearfix">
-    <!--              LOGO              -->
+<header id="navContainer">
+    <div id="navBar">
       <h1 class="logo">
-        <a class"bodyTxt" href="" title"">Ayumi<span class="lastName">Hirayama</span></a>  
+        <a class"bodyTxt" href="" title"">Ayumi<span class="lastName">Hirayama</span></a>
       </h1>
-  <!--              NAV LINKS              -->
-      <nav>
-          <ul>
-            <li><a class=menuItems href="">Contact</a></li>
-            <li><a class=menuItems href="">Resume</a></li>
-            <li><a class=menuItems href="">Work</a></li>
-          </ul>
+               <!-- NAV LINKS              -->
+      <nav id="largeNav">
+         <a class=menuItems href="">Contact</a>
+         <a class=menuItems href="">Resume</a>
+         <a class=menuItems href="">Work</a>
       </nav>
-  </header>
+      <div>
+        <i id="burgerNav" class="material-icons md-24">menu</i>
+      </div>
+    </div>
+<!-- MOBILE NAVIGATION -->
+<nav id="mobileNav">
+    <a class=menuItems href="">Contact</a>
+    <a class=menuItems href="">Resume</a>
+    <a class=menuItems href="">Work</a>
+</nav>
+<!-- END OF MOBILE NAVIGATION -->
+</header>
 
-
- <div class="sect heroImage">
-   <div class="nameTitle">
-    <h1 id="name">Ayumi Hirayama</h1><h1 id="title">&#8212;Video Editor&#8212;</h1>
-<!--                 BUTTON                 -->
-    <a href="#" class="button-1">View Portfolio</a>
+<div id="heroImage">
+  <div class="nameTitle">
+      <h1 id="name">Ayumi Hirayama</h1><h1 id="title">&#8212;Video Editor&#8212;</h1>
+  <!--                 BUTTON                 -->
+      <div class="button-1">
+          <a href="#">View Portfolio</a>
+      </div>
   </div>
- </div>
+</div>
 
 <!--                 WORK SECTION HED                -->
+ <div class="hyperlink"><a name="work"></a></div>
  <div class="subSect">
    <h3 class="subHed">work</h3>
  </div>
 
  <!--                 VIDEO PLAYER                 -->
- <div class="videoContainer">
-   <div class="vidWrapper"><div class="vidPlayer"></div>
-     <div class="vidSubhed"><h4>Video Description</h4></div>
+<div class="videoContainer">
+  <div id="vidWrapper">
+    <iframe src="https://player.vimeo.com/video/133151538" width="961" height="541" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
   </div>
- </div>
+
+  <div class="vidSubhed">
+    <h4>Movie trailer for TV JAPAN</h4>
+  </div>
+  <div>
+    <i class="material-icons md-48">close</i>
+  </div>
+</div>
+
+
 
  <!--                 VIDEO THUMBNAILS SECTION                 -->
- <div class="sect">
-   <ul class="sectImgContainer">
-     <li class="workImg">
+<div class="container-fluid">
+  <div class="row">
+     <div class="col-md-3 col-sm-4 col-md-6" >
        <a href=""><img src="" alt=""></a>
-     </li>
-     <li class="workImg">
+     </div>
+     <div class="col-md-3 col-sm-4 col-md-6" >
        <a href=""><img src="" alt=""></a>
-     </li>
-     <li class="workImg">
+     </div>
+     <div class="col-md-3 col-sm-4 col-sm-6">
        <a href=""><img src="" alt=""></a>
-     </li>
-     <li class="workImg">
+     </div>
+     <div class="col-md-3 col-sm-4 col-md-6">
        <a href=""><img src="" alt=""></a>
-     </li>
-     <li class="workImg">
+     </div>
+     <div class="col-md-3 col-sm-4 col-md-6">
        <a href=""><img src="" alt=""></a>
-     </li>
-     <li class="workImg">
+     </div>
+     <div class="col-md-3 col-sm-4 col-md-6">
        <a href=""><img src="" alt=""></a>
-     </li>
-     <li class="workImg">
+     </div>
+     <div class="col-md-3 col-sm-4 col-md-6">
        <a href=""><img src="" alt=""></a>
-     </li>
-     <li class="workImg">
+     </div>
+     <div class="col-md-3 col-sm-4 col-md-6">
        <a href=""><img src="" alt=""></a>
-     </li>
-     <li class="workImg">
+     </div>
+     <div class="col-md-3 col-sm-4 col-md-6">
        <a href=""><img src="" alt=""></a>
-     </li>
-     <li class="workImg">
+     </div>
+     <div class="col-md-3 col-sm-4 col-sm-6">
        <a href=""><img src="" alt=""></a>
-     </li>
-     <li class="workImg">
+     </div>
+     <div class="col-md-3 col-sm-4 col-md-6">
        <a href=""><img src="" alt=""></a>
-     </li>
-     <li class="workImg">
+     </div>
+     <div class="col-md-3 col-sm-4 col-md-6">
        <a href=""><img src="" alt=""></a>
-     </li>
- </ul>
+     </div>
+  </div>
 </div>
  <!--                 RESUME SECTION HED                 -->
+<div class="hyperlink"><a name="resume"></a></div>
  <div class="subSect">
    <h3 class="subHed">resume</h3>
  </div>
  <!-- REUME BODY -->
- <div class="sect">
+ <div class="resSectWrapper">
    <div class="resContainer">
    <!-- RESUME COLUMN LEFT -->
      <div class="resSectInfo">
-       <p class="resHed">Section Hed
-       </p>
-       <p class="resSubHed"></p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-       consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-       cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-       proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-     </div>
+           <h4 class="resHed">Expxrxxncx</h4>
+             <h5 class="resCompany">Cxmpxny</h5>
+               <p class="resDateCity">Prxsxnt - 2007 <span>|</span> Nxw Yxrk, NY</p>
+                 <p class="resPosition">Vxdxx Xdxtxr</p>
+                   <p class="resText">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut jdjdjdjdj ,quis nostrud exercitation ullamco laboris nisi ut aliquip. </p>
+                   <p class="resText">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut jdjdjdjdj ,quis nostrud exercitation ullamco laboris nisi ut aliquip. </p>
+                   <p class="resText">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut jdjdjdjdj ,quis nostrud exercitation ullamco laboris nisi ut aliquip. </p>
+                   <p class="resText">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut jdjdjdjdj ,quis nostrud exercitation ullamco laboris nisi ut aliquip. </p>
+                   <p class="resText">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut jdjdjdjdj ,quis nostrud exercitation ullamco laboris nisi ut aliquip. </p>
+
+             <h5 class="resCompany">Cxmpxny</h5>
+               <p class="resDateCity">Prxsxnt - 2007 <span>|</span> Nxw Yxrk, NY</p>
+                 <p class="resPosition">Vxdxx EXdxtxr</p>
+                   <p class="resText">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut jdjdjdjdj ,quis nostrud exercitation ullamco laboris nisi ut aliquip. </p>
+                   <p class="resText">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut jdjdjdjdj ,quis nostrud exercitation ullamco laboris nisi ut aliquip. </p>
+                   <p class="resText">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut jdjdjdjdj ,quis nostrud exercitation ullamco laboris nisi ut aliquip. </p>
+                   <p class="resText">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut jdjdjdjdj ,quis nostrud exercitation ullamco laboris nisi ut aliquip. </p>
+                   <p class="resText">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut jdjdjdjdj ,quis nostrud exercitation ullamco laboris nisi ut aliquip. </p>
+           </div>
+
       <!-- RESUME COLUMN RIGHT -->
      <div class="resSectInfo">
-       <p class="resHed">Section Hed
+       <p class="resHed">Sxftwxrx
        </p>
-       <p class="resSubHed">
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+       <p class="resText">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -145,13 +195,13 @@
      </div>
    </div>
  </div>
-
+<div class="hyperlink"><a name="contact"></a></div>
  <!-- CONTACT SECTION HED -->
  <div class="subSect">
  <!--                 CONTACT SECTION INFO                 -->
    <h3 class="subHed">contact</h3>
  </div>
- <div class="sect"></div>
+ <div class="contSectWrapper"></div>
 
 
 <!--             SCRIPTS             -->

@@ -34,7 +34,7 @@ header nav a {
 	cursor: pointer;
 }
 
-#mobile-nav {
+/*#mobile-nav {
 	display: none;
 }
 
@@ -47,7 +47,7 @@ header nav a {
 	text-transform: uppercase;
 	text-decoration: none;
 	color: black;
-}
+}*/
 
 #mobile-nav a:hover {
 	background-color: black;

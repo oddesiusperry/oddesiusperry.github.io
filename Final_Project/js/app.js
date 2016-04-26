@@ -10,28 +10,23 @@ $(function(){
     
   });
 
-      $('.workImg').click(function () {
+      $('.row').click(function () {
       $('.videoContainer').slideToggle();
-
     });
+
+      $('#burgerNav').click(function() {
+      $('#mobileNav').slideToggle();
+  });
+
+
 
 });
 
 
 
-//Scroll Window Test
-
-// $(function() {
-  
-//   $(window).scroll(function() {
-
-//   var windowScrollPosTop = $(window).scrollTop();
-
-//   $(".status").html(windowScrollPosTop);
-
-//   });
-
-// });
-
-
+// $('#append').click(function () {
+//   var text = $('#text').val();
+//   var output = "<p>" + text + "</p>";
+//   $('#navBar').append(output)
+//  })
 

@@ -7,6 +7,7 @@ $(document).ready(function () {
   $('#burger-nav').click(function() {
       $('#mobile-nav').slideToggle();
   });
+  
 
 })
 
