@@ -99,6 +99,10 @@ nav {
   color: #162b2f;
 }
 
+.fa-bars:hover {
+  cursor: pointer;
+}
+
 /* HIDE MOBILE MENU ICON */
 
 #mobileNav {
@@ -262,7 +266,7 @@ nav {
 .vidSubhed {
   width: 100%;
   box-sizing: border-box;
-  padding: 30px 0px;
+  padding: 30px 0 0 0;
 }
 
 /* VIDEO DECRIPTION */
@@ -284,7 +288,9 @@ nav {
 
 .closeButton {
   text-align: center;  
-  margin-top: 30px;
+  /*margin-top: 30px;*/
+  width: 50px;
+  margin: 30px auto;
 }
 
 /* VIDEO CLOSE ICON */
@@ -322,7 +328,7 @@ img {
 .subSect {
   height: 300px;
   background-color: #DDD5CE;
-  max-width: 100%;
+  width: 100%;
   margin: 0px auto;
   position: relative;
   box-sizing: border-box;
@@ -348,33 +354,44 @@ img {
 
 /* PROJECT LIST CONTAINER */
 
-.projectContainer {
-  position: relative; 
-  height: auto;
-  /*width: 100%; */
+.container-fluid { 
+  padding: 0px;
+  box-sizing: border-box;
+  width: 100%;
 }
 
-.projectWrapper {
-  display: flex;
-  height: auto;
-  flex-wrap: wrap;
-  flex-direction: row;
-  /*width: 100%;*/
-
+.row {
+  margin-right: 0px;
+  margin-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  box-sizing: border-box;
+  padding-right: 0px;
+  padding-left: 0px;
 }
 
-/* PROJECT THUMBNAILS */
-
-.projectThumbnails {
-  width:calc(25% - 2px);
-  min-height: 200px;
-  background-color: gray;
-  border: 1px solid red;
+.row div {
+  padding-right: 0px;
+  padding-left: 0px;
+  outline: 1px solid black;
+  background-color: #162B2F;
+  height: 220px;
+  box-sizing: border-box;
 }
 
-.projectThumbnails:hover {
-  background-color: rgba(238,131,111, 0.2);
+.row div img {
+  height: 100%;
+  display: block;
+  -webkit-transition:-webkit-transform 0.5s ease;
+  -moz-transition:-moz-transform 0.5s ease;
+  transition:transform 0.5s ease;
+}
+
+
+.row div img:hover {
   cursor: url(../nav/lg-crosshair-48.svg) 4 12, auto;
+/*  transform: scale(1.2);
+  transition: all 0.3s ease*/
 }
 
 
@@ -591,7 +608,7 @@ hr {
 
 /*   FORM   */
 
-form {
+#inputForm {
   margin: 0px auto;
   width: 100%;
   box-sizing: border-box;    
@@ -628,11 +645,32 @@ label {
   margin-top: 15px;
   width: 100%;
   height: 30px;
+}
+
+
+#required, #message {
   border-radius: 3px;
   border: none;
-  opacity: 0.02;
-  /*padding-left: 5px;*/
+  outline: none;
+  background-color: #193136;
+  color:#EE836F;
+  letter-spacing: 0.2em;
+  font-size: .6em;
+  font-weight: 100;
+  padding-left: 10px;
 }
+
+
+#required input:focus, #message textarea:focus {
+  background: #fff;
+}
+
+::-webkit-input-placeholder {
+  color:#DDD5CE;
+  letter-spacing: 0.1em;
+  font-weight: 100;
+}
+
 
 .messageBox {
   margin: 0px auto;
@@ -645,14 +683,19 @@ label {
   margin-top: 15px;
   margin-bottom: 50px;
   width: 100%;
-  height: 300px;
-  border-radius: 3px;
-  opacity: 0.02;
+  height: 200px;
+  padding-top: 10px;
+  overflow: auto;
 }
 
 .buttonBox {
   text-align: center;
   width: 100%;
+}
+
+#submit:hover {
+  cursor: pointer;
+  background-color: #EE836F;
 }
 
 #submit {
@@ -661,13 +704,14 @@ label {
   width: 25%;
   height: 33px;
   border-radius: 3px;
-  background-color: #EE836F;
+  background-color: #DDD5CE;
   font-size: .6em; 
   font-weight: 300;
   color: #162B2F;
   text-transform: uppercase;
   letter-spacing: 0.2em;
   margin-bottom: 20px;
+  box-sizing: border-box;
 }
 
 /*   FOOTER   */
@@ -694,12 +738,24 @@ label {
   color: #EE836F;
 }
 
-/*   MEDIA QUERIES   */
+
+
+
+
+/****************   MEDIA QUERIES   ****************/
+
+
+@media (min-width: 951px) {
+ header #mobileNav {
+    display: none;
+  }
+}
 
 @media (max-width: 950px) {
     #largeNav {
       display: none;
     }
+
     .fa-bars {
       display: block;
       float: right;
@@ -753,28 +809,8 @@ label {
       border: 0;
       height: 1px;
    }
-   
-   .projectContainer
-   .projectWrapper {
-      flex-wrap: wrap;
-   }
-
-
-  .projectThumbnails {
-    width: 100%;
-    flex-wrap: wrap;
-  }
-
 }
 
-
-/*    */
-
-@media (min-width: 950px) {
-    #mobileNav {
-      display: none;
-    }
-}
 
 /*  IPAD VIEW  */
 @media (max-width: 768px) {
@@ -810,6 +846,8 @@ label {
       width: 90%;
     }
 }
+
+
 
 @media (max-width: 435px) {
 
@@ -876,83 +914,22 @@ label {
       margin-bottom: 20px;
     }
 
-      .nameTitle 
-      .button-1 {
-        width: 250px;
-      }
+    .nameTitle 
+    .button-1 {
+      width: 250px;
+    }
 
    .videoContainer {
       margin: 0 auto;
       width: 100%;
-/*      -webkit-transition: width 0.5s, height 0.5s, -webkit-transform 0.5s;
-      -moz-transition: width 0.5s, height 0.5s, -moz-transform 0.5s;
-      transition: width 0.5s, height 0.5s, transform 0.5s;*/
     }
 
     .vidSubhed h4 {
       margin: 0px 25px;
     }
-
-}
-
-
-@media screen and ( max-width: 1200px) {
-
-   .projectContainer
-   .projectWrapper {
-      flex-wrap: wrap;
-   }
-
-  .projectWrapper
-  .projectThumbnails {
-    display: flex;
-    width: calc(33.33% - 2px);
-    flex-wrap: wrap;
-  }
-}
-
-
-@media screen and ( max-width: 950px) {
-
-   .projectContainer
-   .projectWrapper {
-      flex-wrap: wrap;
-   }
-
-  .projectWrapper
-  .projectThumbnails {
-    display: flex;
-    height: 250px;
-    width: calc(50% - 2px);
-    flex-wrap: wrap;
-  }
-}
-
-
-   @media screen and ( max-width: 750px) {
-  .projectWrapper
-  .projectThumbnails {
-    height: 225px;
-  }
 }
 
 @media screen and ( max-width: 600px) {
-   .projectContainer
-   .projectWrapper {
-      flex-wrap: wrap;
-   }
-
-  .projectWrapper
-  .projectThumbnails {
-    display: flex;
-    width: calc(100% - 2px);
-    flex-wrap: wrap;
-  }
-
-.inputContainer {
-  flex-wrap: wrap;
-}
-
   form
   .inputContainer
   .inputBox {
@@ -962,41 +939,11 @@ label {
   #submit {
     width: 100%;
   }
-}
 
-@media screen and ( max-width: 750px) {
-  .projectWrapper
-  .projectThumbnails {
-    height: 225px;
+  .inputContainer {
+    flex-wrap: wrap;
   }
-}
 
-   @media screen and ( max-width: 650px) {
-  .projectWrapper
-  .projectThumbnails {
-    height: 200px;
-  }
-}
-
-   @media screen and ( max-width: 599px) {
-  .projectWrapper
-  .projectThumbnails {
-    height: 300px;
-  }
-}
-
-   @media screen and ( max-width: 500px) {
-  .projectWrapper
-  .projectThumbnails {
-    height: 275px;
-  }
-}
-
-   @media screen and ( max-width: 400px) {
-  .projectWrapper
-  .projectThumbnails {
-    height: 215px;
-  }
 }
 
 @media screen and ( max-width: 940px) {
@@ -1016,4 +963,53 @@ label {
     line-height: 1.25em;
   }
 }
+
+
+
+
+/*    BOOTSTRAP MEDIA QUERIES GRID HEIGHT RESIZE    */
+
+@media screen and (max-width: 1100px) {
+
+    .row .col-md-3 {
+      height: 180px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+    .row .col-xs-6 {
+      height: 150px;
+  }
+}
+
+
+@media screen and (max-width: 450px) {
+
+  .row .col-xs-12 {
+    width: 100%;
+    height: 240px;
+  }
+}
+
+@media (max-width: @screen-sm) {
+    [class*="col-"] {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .row {
+      margin-left: 0;
+      margin-right: 0;
+    }
+    .container-fluid {
+      margin: 0;
+      padding: 0;
+    }
+}
+
+
+
+
+
+
 

@@ -1,5 +1,7 @@
 $(function(){
-  
+
+///// PARALLAX FOR NAME AND TITLE OPENING PAGE ///////
+
   $(window).scroll(function() {
 
     var wScroll = $(this).scrollTop();
@@ -10,18 +12,27 @@ $(function(){
     
   });
 
+
+
+////   TOGGLES MOBILE NAV WHEN MENU ICON IS CLICKED  ////
+
     $('.fa-bars').click(function() {
       $('#mobileNav').slideToggle('375','linear');
    });
 
-    $('.projectThumbnails').click(function () {
+////    DISPLAYS VIDEO PLAYER WHEN THUMBNAILS ARE CLICKED ////
+
+    $('.row').click(function () {
       $('.videoContainer').slideDown();
   });
+
+/////    HIDES VIDEO WHEN THE CLOSE BUTTON IS CLICKED  /////
 
     $('.closeButton').click(function () {
         $('.videoContainer').slideUp('375','linear');
   });
 
+////    SMOOTH SCROLLING EFFECTS MOVES TO SECTIONS OF PAGE WHEN NAV LINKS ARE CLICKED  /////
 
     $('a[href*="#"]:not([href="#"])').click(function() {
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -30,12 +41,13 @@ $(function(){
         if (target.length) {
         $('html, body').animate({
           scrollTop: target.offset().top - 60
-        }, 1000);
+        }, 850);
         return false;
       }
     }
   });
 
+////   FORMS AND INPUT     //////
 
 
 });

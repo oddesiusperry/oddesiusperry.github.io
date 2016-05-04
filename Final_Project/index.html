@@ -9,16 +9,27 @@
       <!--              RESPONSIVE WEB META TAG              -->
       <meta name="viewport" content="width=device-width, initial-scale=1">
 
-      <!--              GOOGLE FONTS AND ICONS              -->
+
+<!--               BOOTSTRAP Latest compiled and minified CSS                 -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!--                 BOOTSTRAP Optional theme                -->
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous"> -->
+
+
+      <!--              FONT AWESOME CSS ICONS              -->
 
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 
+<!--        GOOGLE FONTS         -->
 
       <link href='https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,100italic,100,700italic,700,900,900italic' rel='stylesheet' type='text/css'>
 
-      <!--             CSS STYLES             -->
+      <!--             RESET CSS STYLES             -->
 
       <link rel="stylesheet" href="css/reset.css">
+
+      <!--               CUSTOM CSS    -->
 
       <link rel="stylesheet" href="css/style.css">
       
@@ -98,33 +109,30 @@
 
 
  <!--                 VIDEO THUMBNAILS SECTION                 -->
-<div class="hyperlink"><a name="thumbnails"></a></div>
-<div class="projectContainer">
-   <ul class="projectWrapper">
-     <li class="projectThumbnails "><a href="#thumbnailSect"></a><img src=""></li>
-     <li class="projectThumbnails "><a href="#thumbnailSect"></a><img src=""></li>
-     <li class="projectThumbnails "><a href="#thumbnailSect"></a><img src=""></li>
-     <li class="projectThumbnails "><a href="#thumbnailSect"></a><img src=""></li>
-   
 
-     <li class="projectThumbnails "><a href=""></a><img src=""></li>
-     <li class="projectThumbnails "><a href=""></a><img src=""></li>
-     <li class="projectThumbnails "><a href=""></a><img src=""></li>
-     <li class="projectThumbnails "><a href=""></a><img src=""></li>
+<div class="container-fluid ">
+  <div class="row">
+    <div class="col-md-3 col-sm-4 col-xs-6 col-xs-12"><img src="images/cloud_thumbnail1.svg"></div>
+    <div class="col-md-3 col-sm-4 col-xs-6 col-xs-12"><img src="images/cloud_thumbnail1.svg"></div>
+    <div class="col-md-3 col-sm-4 col-xs-6 col-xs-12"><img src="images/cloud_thumbnail1.svg"></div>
+    <div class="col-md-3 col-sm-4 col-xs-6 col-xs-12"><img src="images/cloud_thumbnail1.svg"></div>
 
+    <div class="col-md-3 col-sm-4 col-xs-6 col-xs-12"><img src="images/cloud_thumbnail1.svg"></div>
+    <div class="col-md-3 col-sm-4 col-xs-6 col-xs-12"><img src="images/cloud_thumbnail1.svg"></div>
+    <div class="col-md-3 col-sm-4 col-xs-6 col-xs-12"><img src="images/cloud_thumbnail1.svg"></div>
+    <div class="col-md-3 col-sm-4 col-xs-6 col-xs-12"><img src="images/cloud_thumbnail1.svg"></div>
 
-     <li class="projectThumbnails "><a href=""></a><img src=""></li>
-     <li class="projectThumbnails "><a href=""></a><img src=""></li>
-     <li class="projectThumbnails "><a href=""></a><img src=""></li>
-     <li class="projectThumbnails "><a href=""></a><img src=""></li>
-   </ul>
+    <div class="col-md-3 col-sm-4 col-xs-6 col-xs-12"><img src="images/cloud_thumbnail1.svg"></div>
+    <div class="col-md-3 col-sm-4 col-xs-6 col-xs-12"><img src="images/cloud_thumbnail1.svg"></div>
+    <div class="col-md-3 col-sm-4 col-xs-6 col-xs-12"><img src="images/cloud_thumbnail1.svg"></div>
+    <div class="col-md-3 col-sm-4 col-xs-6 col-xs-12"><img src="images/cloud_thumbnail1.svg"></div>
+  </div>
 </div>
-
 
  <!--                 RESUME SECTION HED                 -->
 <div class="subSect" id="resumeSection">
    <h3 class="subHed">resume</h3>
- </div>
+</div>
 
 
  <!-- RESUME BODY -->
@@ -222,27 +230,27 @@
 </div>
 
 <div class="contactIntroTxt">
-  <h3>Get In Touch</h3>
+  <h3>Stay In Touch</h3>
 </div>
 
 
-<form action="">
+<form id="inputForm">
   <div class="inputContainer">
 <!--   NAME INPUT SECTION  -->
     <div class="inputBox">
       <label>Name</label><br>
-        <input type="text" value="something" id="required" placeholder="">
+        <input type="name" value="" id="required" placeholder="firstname lastname">
     </div>
 <!--   EMAIL INPUT SECTION   -->
     <div class="inputBox">
       <label>Email</label><br>
-        <input type="text" value="something" id="required" placeholder="">
+        <input type="email" value="" id="required" placeholder="firstlast@email.com">
     </div>
   </div>
 <!--   MESSAGE INPUT SECTION   -->
     <div class="messageBox">
       <label>Message</label><br>
-        <textarea name="message" id="message"></textarea>
+        <textarea name="message" id="message" placeholder="write something..."></textarea>
     </div>
 <!--   SEND BUTTON   -->
     <div class="buttonBox">
@@ -257,10 +265,20 @@
 </div>
 
 
-<!--             SCRIPTS             -->
+<!--                             SCRIPTS                                     -->
 
+
+
+
+<!--      MY JS       -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
 <script src="js/app.js"></script>
+
+<!--    BOTSTRAP JS -->
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
 
 </body>
 </html>

@@ -11,24 +11,32 @@
 </head>
 
 <body>
+<div id="wrapper">
   <div id="container">
-    <form id="box">
       <h1 id=hed><!-- &#42;<br> -->Temperature Converter</h1>
            <!-- FAHRENHEIT DIV -->
         <div id="fahrenheit">
           <p class="tempText">Fahrenheit</p>
-          <input class="inputTemp" data-tempid="Fahr" /> <!-- ENTER FAHRENHEIT VALUE -->
+          <form class="box" id="Fahr">
+            <input type="text" class="inputTemp" id="fahrOutput">
+          </form> <!-- ENTER FAHRENHEIT VALUE -->
         </div>
           <!-- EQUAL SIGN -->
           <p id=equalSign>=</p>
            <!-- CELSIUS DIV -->
         <div id="celsius">
           <p class="tempText">Celsius</p>
-          <input class="inputTemp" data-tempid="Cels" /> <!-- ENTER CELSIUS VALUE -->
+            <form class="box" id="Cels">
+              <input type="text" class="inputTemp" id="celsOutput">
+            </form>
+           <!-- ENTER CELSIUS VALUE -->
         </div>
-    </form>
   </div>
+</div>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+ <script type="text/javascript" src="js/app.js" ></script>
 </body>
 </html>
 
