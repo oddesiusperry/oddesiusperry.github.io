@@ -75,11 +75,18 @@ $('.row').on('click', function(event) {
         $('.videoContainer').slideUp('375','linear'); 
   });
 
+////   FORMS AND INPUT     //////
+
+    $('#inputForm').submit(function (event) {
+
+      event.preventDefault(); // PREVENT DEFAULT BROWSER FROM REFRESHING
+
+    var myInput = $('#required','#message').val('');
+  });
 
 
 });
 
-////   FORMS AND INPUT     //////
 
 
 

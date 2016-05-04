@@ -5,5 +5,6 @@ $(document).ready(function () {
     event.preventDefault(); //snytax to prevent default behavior of refreshing the browser
 
     var myInput = $('#name-input').val('');
+    $('#target').append('<p>' + '</p>')
   })
 })
