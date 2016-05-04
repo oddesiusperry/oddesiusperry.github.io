@@ -297,7 +297,7 @@ nav {
 
 .closeButton 
 img {
-  background-image: url(..videos/lg-close-button-36);
+  background-image: url(..videos/lg-close-button-36.svg);
   height: 30px;
   box-sizing: border-box;
   opacity: 1;
@@ -309,7 +309,7 @@ img {
 /* VIDEO CLOSE ICON HOVER IMAGE */
 
 .closeButton:hover img {
-  background-image: url(..videos/lg-close-button-36);
+  background-image: url(..videos/lg-close-button-36.svg);
   opacity: 0.5;
 }
 
@@ -373,14 +373,14 @@ img {
 .row div {
   padding-right: 0px;
   padding-left: 0px;
-  outline: 1px solid black;
+  outline: 1px solid #DDD5CE;
   background-color: #162B2F;
   height: 220px;
   box-sizing: border-box;
 }
 
 .row div img {
-  height: 100%;
+  /*height: 100%;*/
   display: block;
   -webkit-transition:-webkit-transform 0.5s ease;
   -moz-transition:-moz-transform 0.5s ease;
@@ -560,7 +560,7 @@ hr {
 .contactIcons {
   display: inline-block;
   color: #DDD5CE;
-  width: 200px;
+  /*width: 200px;*/
   padding-left: 40px; 
   padding-right: 40px;
 }

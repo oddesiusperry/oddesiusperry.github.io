@@ -12,6 +12,16 @@ $(function(){
     
   });
 
+/// HIDE MOBILE NAV BAR IF BROWSER WINDOW @ MIN-WIDTH 950px ////
+
+  $(window).resize(function () {
+
+    var width = $(window).width()
+
+    if (width > 950) {
+        $("#mobileNav").slideUp('375','linear');
+      }
+    });
 
 
 ////   TOGGLES MOBILE NAV WHEN MENU ICON IS CLICKED  ////
@@ -20,10 +30,22 @@ $(function(){
       $('#mobileNav').slideToggle('375','linear');
    });
 
+////   SCROLL TO VIDEO CONTAINER DIV ////
+
+$('.row').on('click', function(event) {
+    var target = $(this);
+    if( target.length ) {
+        event.preventDefault();
+        $('html, body').animate({
+            scrollTop: target.offset().top - 20
+        }, 850);
+   }
+});
+
 ////    DISPLAYS VIDEO PLAYER WHEN THUMBNAILS ARE CLICKED ////
 
     $('.row').click(function () {
-      $('.videoContainer').slideDown();
+      $('.videoContainer').slideDown('375','linear');
   });
 
 /////    HIDES VIDEO WHEN THE CLOSE BUTTON IS CLICKED  /////
@@ -47,10 +69,17 @@ $(function(){
     }
   });
 
-////   FORMS AND INPUT     //////
+////   CLOSE VIDEO CONTAINER WHEN LARGE NAV LINKS ARE CLICKED ////
+
+    $('.menuItems').click(function () {
+        $('.videoContainer').slideUp('375','linear'); 
+  });
+
 
 
 });
+
+////   FORMS AND INPUT     //////
 
 
 
@@ -75,13 +104,9 @@ $(function(){
 
 
 
-//      MOBILE NAV WINDOW RESIZE     //
 
-//   $(window).resize(function () {
-// ​
-//     var width = $(window).width()
-// ​
-//     if (width > 950) {
-//         $('#mobileNav').hide()
-//     }
-// });
+
+
+
+
+
