@@ -765,7 +765,7 @@ label {
     }
 
     .logo a {
-      font-size: 1em;
+      font-size: 1.25em;
       margin-left: 25px;
     }
 
@@ -886,8 +886,8 @@ label {
     }
 
     .logo a {
-      font-size: .9em;
-      margin: 12px 0px  0px 15px;
+      font-size: 1em;
+      margin: 10px 0px  0px 15px;
     }
 
     #mobileNav {
@@ -899,6 +899,11 @@ label {
       text-transform: uppercase;
       text-decoration: none;
       color: #162B2F;
+    }
+
+
+    .nameTitle {
+      margin-top: 25px;
     }
 
     .nameTitle 
