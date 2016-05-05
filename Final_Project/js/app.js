@@ -63,7 +63,7 @@ $('.row').on('click', function(event) {
         if (target.length) {
         $('html, body').animate({
           scrollTop: target.offset().top - 60
-        }, 1500);
+        }, 1200);
         return false;
       }
     }
