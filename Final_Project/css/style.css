@@ -927,6 +927,10 @@ label {
     .vidSubhed h4 {
       margin: 0px 25px;
     }
+
+    .subSect {
+      height: 200px;
+    }
 }
 
 @media screen and ( max-width: 600px) {
