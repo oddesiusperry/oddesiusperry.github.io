@@ -875,6 +875,8 @@ label {
 }
 
 
+/*     IPHONE VIEW      */
+
 @media (min-width: 320px) and (max-width: 480px) {
 
     .fa-bars {
@@ -887,6 +889,7 @@ label {
 
     .logo a {
       font-size: 1em;
+      font-weight: 300;
       margin: 10px 0px  0px 15px;
     }
 
@@ -974,8 +977,8 @@ label {
 
 @media (max-width: 320px) {
   .copyright p {
-    font-size: 0.4em; 
-    letter-spacing: .3em;
+    font-size: 0.5em; 
+    letter-spacing: .2em;
     text-transform: uppercase;
     line-height: 1.25em;
   }

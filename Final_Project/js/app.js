@@ -75,6 +75,14 @@ $('.row').on('click', function(event) {
         $('.videoContainer').slideUp('375','linear'); 
   });
 
+    $('.menuItems').click(function () {
+        $('#mobileNav').slideUp('375','linear'); 
+  });
+
+    $('.bodyTxt').click(function () {
+        $('#mobileNav').slideUp('375','linear'); 
+  });
+
 ////   FORMS AND INPUT     //////
 
     $('#inputForm').submit(function (event) {
