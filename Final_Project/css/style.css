@@ -329,11 +329,19 @@ img {
   height: 300px;
   background-color: #DDD5CE;
   width: 100%;
-  margin: 1px auto;
+  margin: 0px auto;
   position: relative;
   box-sizing: border-box;
   zoom: 1;
 }
+
+
+
+#subColorTxt {
+  color: #DDD5CE;
+}
+
+
 
 /* SECTION HED STYLES */
 
@@ -351,6 +359,7 @@ img {
   right: 0;
   margin-top: -9px
 }
+
 
 /* PROJECT LIST CONTAINER */
 
@@ -398,6 +407,7 @@ img {
   display: flex;
   width: 100%;
   background-color: #DDD5CE;
+  padding-bottom: 50px;
 }
 
 /* RESUME SECTION CONTAINER 80% OF BROWSER WIDTH */
@@ -540,6 +550,10 @@ hr {
 }
 
 /* CONTACT SECTION CONTAINER */
+
+#contactSection {
+  background-color: #162B2F;
+}
 
 .contSectWrapper { 
   background-color: #162B2F;
@@ -800,12 +814,12 @@ label {
       margin-top: 10px;
    }
 
-   hr {
+/*   hr {
       display: inherit;  
       background-color:#162B2F;
       border: 0;
       height: 1px;
-   }
+   }*/
 }
 
 
