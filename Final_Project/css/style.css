@@ -567,7 +567,7 @@ hr {
 
 .contactIcons a {
   font-size: .6em; 
-  font-weight: 100;
+  font-weight: 300;
   color: #DDD5CE;
   box-sizing: border-box;
   margin: 0px auto;
@@ -579,7 +579,7 @@ hr {
 
 .contactIcons p {
   font-size: .6em; 
-  font-weight: 100;
+  font-weight: 300;
   color: #DDD5CE;
   box-sizing: border-box;
   padding-top: 10px;
@@ -656,7 +656,7 @@ label {
   color:#EE836F;
   letter-spacing: 0.2em;
   font-size: .6em;
-  font-weight: 100;
+  font-weight: 300;
   padding-left: 10px;
 }
 
@@ -892,6 +892,13 @@ label {
 
     #mobileNav {
       padding: 10px 15px 0px 15px;
+    }
+
+    #mobileNav a {
+      font-size: 0.7em;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #162B2F;
     }
 
     .nameTitle 
