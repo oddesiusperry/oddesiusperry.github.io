@@ -79,7 +79,7 @@ $('.row').on('click', function(event) {
         $('#mobileNav').slideUp('375','linear'); 
   });
 
-    $('.bodyTxt').click(function () {
+    $('.row').click(function () {
         $('#mobileNav').slideUp('375','linear'); 
   });
 
