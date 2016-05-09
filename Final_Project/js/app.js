@@ -88,8 +88,6 @@ $('.row').on('click', function(event) {
     $('#inputForm').submit(function (event) {
 
       event.preventDefault(); // PREVENT DEFAULT BROWSER FROM REFRESHING
-
-    var myInput = $('#required','#message').val('');
   });
 
 
@@ -98,24 +96,6 @@ $('.row').on('click', function(event) {
 
 
 
-//       INPUT TEXT CHANGES       //
-
-    // $('input').each(function() {
-    //     $.data(this, 'default', this.value);
-    // }).css("color","black")
-    // .focus(function() {
-    //     if (!$.data(this, 'edited')) {
-    //         this.value = "";
-    //         $(this).css("color","white");
-    //     }
-    // }).change(function() {
-    //     $.data(this, 'edited', this.value != "");
-    // }).blur(function() {
-    //     if (!$.data(this, 'edited')) {
-    //         this.value = $.data(this, 'default');
-    //         $(this).css("color","white");
-    //     }
-    // });
 
 
 

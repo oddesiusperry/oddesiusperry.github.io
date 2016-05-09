@@ -747,23 +747,27 @@ label {
   outline: none;
   background-color: #193136;
   color:#EE836F;
-  letter-spacing: 0.2em;
-  font-size: .6em;
-  font-weight: 300;
-  padding-left: 10px;
-}
-
-
-#required input:focus, #message textarea:focus {
-  background: #fff;
+  letter-spacing: 0.1em;
+  font-size: .7em;
+  font-weight: 700;
+  padding-left: 10px
 }
 
 ::-webkit-input-placeholder {
   color:#DDD5CE;
   letter-spacing: 0.1em;
   font-weight: 100;
+  font-size: .9em;
 }
 
+
+input:focus{
+background-color:#DDD5CE !important;
+}
+
+textarea:focus{
+background-color:#DDD5CE !important;
+}
 
 .messageBox {
   margin: 0px auto;
@@ -806,6 +810,7 @@ label {
   margin-bottom: 20px;
   box-sizing: border-box;
 }
+
 
 /*   FOOTER   */
 

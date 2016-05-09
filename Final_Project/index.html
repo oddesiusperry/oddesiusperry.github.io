@@ -302,7 +302,7 @@
 
 
     <div class="contactIcons">
-      <i class="fa fa-envelope" aria-hidden="true"></i><a href="">contact@ayumihirayama.com</a>
+      <i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:&#115;&#97;&#103;&#97;&#115;&#111;&#110;&#110;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">contact@ayumihirayama.com</a>
     </div>
 
     <div class="contactIcons">
@@ -315,17 +315,17 @@
 </div>
 
 
-<form id="inputForm">
+<form action="mailto:&#115;&#97;&#103;&#97;&#115;&#111;&#110;&#110;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;" method="post" id="inputForm">
   <div class="inputContainer">
 <!--   NAME INPUT SECTION  -->
     <div class="inputBox">
       <label>Name</label><br>
-        <input type="name" value="" id="required" placeholder="firstname lastname">
+        <input type="text" name="contactName" id="required" placeholder="firstname lastname" required="">
     </div>
 <!--   EMAIL INPUT SECTION   -->
     <div class="inputBox">
       <label>Email</label><br>
-        <input type="email" value="" id="required" placeholder="firstlast@email.com">
+        <input type="email" name="emailAddress" id="required" placeholder="firstlast@email.com" required="">
     </div>
   </div>
 <!--   MESSAGE INPUT SECTION   -->
