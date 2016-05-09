@@ -419,9 +419,9 @@ img {
     top: auto;
     bottom: 0;
     padding: 15px;
-    height: 4.5em;
-    background: rgba(22,43,47, .8);
-    color: #DDD5CE;
+    height: 4.25em;
+    background: rgba(221,213,206, 0.5);
+    color: #162B2F;
     -webkit-transition: -webkit-transform 0.35s;
     transition: transform 0.35s;
     -webkit-transform: translate3d(0,100%,0);
@@ -430,8 +430,8 @@ img {
 }
 
 .hovereffect img {
-    display: block;
-    position: relative;
+  display: block;
+  position: absolute;
   -webkit-transition: -webkit-transform 0.35s;
   transition: transform 0.35s;
 }
@@ -443,57 +443,31 @@ img {
 
 .hovereffect h2 {
     text-transform: uppercase;
-    /*color: #fff;*/
+    outline: none;
     text-align: center;
     position: relative;
-    font-size: 17px;
+    font-size: .8em;
+    font-weight: 300;
+    letter-spacing: 0.1em;
     padding: 20px;
-    /*background: rgba(0, 0, 0, 0.6);*/
-/*    float: left;
-*/    margin: 0px;
+    margin: 0px;
     display: inline-block;
 }
-
-.hovereffect a.info {
-    display: inline-block;
-    text-decoration: none;
-    padding: 7px 14px;
-    text-transform: uppercase;
-  color: #fff;
-  /*border: 1px solid #fff;*/
-  margin: 50px 0 0 0;
-  background-color: transparent;
-}
-.hovereffect a.info:hover {
-    box-shadow: 0 0 5px #fff;
-}
-
-
-/*.hovereffect p.icon-links a {
-  float: right;
-  color: #3c4a50;
-  font-size: 1.4em;
-}*/
-
-/*.hovereffect:hover p.icon-links a:hover,
-.hovereffect:hover p.icon-links a:focus {
-  color: #252d31;
-}*/
 
 .hovereffect h2 {
-  -webkit-transition: -webkit-transform 0.35s;
-  transition: transform 0.35s;
-  -webkit-transform: translate3d(0,200%,0);
-  transform: translate3d(0,200%,0);
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(0,200%,0);
+    transform: translate3d(0,200%,0);
 }
 
-.hovereffect /*p.icon-links a*/ span:before {
+/*.hovereffect span:before {
   display: inline-block;
-  padding: 8px 10px;
+  padding: 10px 10px;
   speak: none;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
+}*/
 
 
 .hovereffect:hover .overlay,
